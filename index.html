@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <style type="text/css" media="all">
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      label {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      select {
+        padding: 6px;
+        margin-bottom: 5px;
+      }
+      .hasil {
+        width: 250px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 3px;
+        color: green;
+      }
+      #btn {
+        padding: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Kalkulator Sakti</h2>
+      <label for="value1">value1</label>
+      <input type="number" name="value1" id="input1" />
+      <label for="value2">value2</label>
+      <input type="number" name="value2" id="input2" />
+
+      <label for="opsi">option</label>
+      <select name="opsi" id="opsi" style="margin-bottom: 10px">
+        <option>tambah</option>
+        <option>kurang</option>
+        <option>kali</option>
+        <option>bagi</option>
+        <option>modulus</option>
+      </select>
+      <br />
+      <button id="btn" type="submit">calculate</button>
+
+      <div class="hasil">
+        <h2 id="hasil"></h2>
+      </div>
+    </div>
+
+    <script src="app.js" charset="utf-8"></script>
+  </body>
+</html>
